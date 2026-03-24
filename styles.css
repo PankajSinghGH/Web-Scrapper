@@ -1,0 +1,95 @@
+ body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .half {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            transition: background-color 0.5s ease;
+        }
+
+        .left {
+            left: 0;
+            background-color: #c0c0c0; /* Lighter shade */
+        }
+
+        .right {
+            right: 0;
+            background-color: #d3d3d3; /* Darker shade */
+        }
+
+        .left:hover {
+            background-color: #d3d3d3;
+        }
+
+        .right:hover {
+            background-color: #c0c0c0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo span {
+            font-size: 30px; /* Increase font size */
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px; /* Add letter spacing for style */
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 2px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 400px;
+            margin-top: 20px;
+        }
+
+        .search-input {
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            color: #333;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .search-button {
+            border: none;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .search-button:hover {
+            background-color: #e64a19;
+        }
+
+        .search-input:focus {
+            outline: none;
+        }
